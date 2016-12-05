@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Flat Web</title>
+    <!--[if lte IE 8]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenLite.min.js"></script>
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/plugins/CSSPlugin.min.js"></script>
+   	<script src="animations.js"></script>
+</head>
+
+<body class="body">
+  <div class="main">
+        
+<!--HEADER TAB-->    
+        <header id="pageheader">
+       		<div class="container_12">
+   			        
+              <div id="logo_and_nav">
+                      	
+                <span class="grid2" id="onlylogo">
+                	<a href="">PP</a>
+               	</span>
+  	            
+                <span class="grid10" id="onlynav">
+
+                  <nav>
+                    <a href="#" id="a_home" onMouseOver="inAnchor(this)" onMouseOut="outAnchor(this)">
+                    	Home
+                   	</a>
+                   	
+                    <a href="#services" id="a_services" onMouseOver="inAnchor(this)" onMouseOut="outAnchor(this)">
+                    	Services
+                   	</a>
+                    
+                    <a href="#portfolio" id="a_portfolio" onMouseOver="inAnchor(this)" onMouseOut="outAnchor(this)">
+                      	Portfolio
+                    </a>
+                   	
+                    <a href="http://sumanjitsengupta.wordpress.com/" target="_blank" id="a_blog" 
+                      onMouseOver="inAnchor(this)" onMouseOut="outAnchor(this)">
+                      	Blog
+                    </a>
+                  	
+                    <a href="#contact" id="a_hireme" onMouseOver="inAnchor(this)" onMouseOut="outAnchor(this)">
+                      	Hire me
+                    </a>
+                  </nav>
+
+  	            </span>
+              </div>
+              
+              <div id="holla">Holla.</div>
+              
+              <div class="grid9" id="my_description">
+              	I'm <span id="my_desc_bold">Sumanjit SenGupta</span> an India-based <span id="my_desc_bold">web</span>&<span id="my_desc_bold">graphic</span> designer who creates clean and modern design for the world of web.
+            	</div>
+              
+              <div id="h_button">
+              	<a href="#portfolio" onMouseOver="inHbutton(this)" onMouseOut="outHbutton(this)">
+               		View my work                      		
+                </a>
+             	</div>
+
+          </div>
+        </header>
+            
+<!--/*SERVICES TAB*/-->
+        <section id="services">
+        	<div class="container_12">
+
+            <span class="grid1" id="webdn_logo"><img src="images/Browser.png" alt=""></span>
+            
+            <span class="grid3" id="webdn_content">
+          		<div class="ser_heading">Web Design</div>
+              <div class="ser_desc">
+              	This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
+             	</div>
+              <div class="read_more">
+              	<a href="#portfolio">Read More</a>
+            	</div>
+            </span>
+            
+            <span class="grid1" id="mobiledn_logo"><img src="images/iphone.png" alt=""></span>
+            
+            <span class="grid3" id="mobiledn_content">
+            	<div class="ser_heading">Mobile Design</div>
+              <div class="ser_desc">
+              	This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
+             	</div>
+              <div class="read_more">
+              	<a href="#portfolio">Read More</a>
+            	</div>
+            </span>
+            
+            <span class="grid1" id="photographydn_logo">
+              <img src="images/Camera.png" alt="">
+            </span>
+            
+            <span class="grid3" id="photographydn_content">
+            	<div class="ser_heading">Photography</div>
+              <div class="ser_desc">
+              	This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
+             	</div>
+              <div class="read_more">
+              	<a href="#portfolio">Read More</a>
+            	</div>
+            </span>
+
+          </div>
+        </section>
+            
+<!--PORTFOLIO TAB-->
+        <section id="portfolio">
+          <div id="por_content">
+
+            <img src="images/macbook3_small.png" id="por_macbook" alt="">
+
+            <div class="container_12">
+              
+              <div id="por_heading">Thewebdesigner</div>
+              
+              <div id="por_project_date">04 August 2014</div>
+              
+              <div class="grid6" id="por_desc">
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+              </div>
+              
+              <div class="por_subheading">CLIENT</div>
+                  
+              <div class="por_subhd_value">Lary Page</div>
+                  
+              <div class="por_subheading">ROLE</div>
+              
+              <div class="por_subhd_value">Developer</div>
+              
+              <div class="por_subheading">TOOLS</div>
+              
+              <div class="por_subhd_value">Adobe Dreamweaver</div>
+              
+              <div id="p_button">
+                <a href="#portfolio" onMouseOver="inPbutton(this)" onMouseOut="outPbutton(this)">View Project
+                </a>
+              </div>
+
+          	</div>
+
+          </div>
+        </section>
+            
+<!--CONTACT TAB-->
+  			<section id="contact">
+          <div class="container_12">
+            
+            <div id="say_hello">Say<span id="hello">Hello.</span></div>
+            
+            <div id="con_desc">Project in Mind? I'd love to hear from you.</div>
+            
+            <div id="social_icons">
+            	
+              <a href="mailto:luvdjkaran09@gmail.com"><img src="images/email.png" alt="" onMouseOver="inSocial(this)" onMouseOut="outSocial(this)"></a>
+              
+              <a href="https://www.facebook.com/sumanjitsengupta06" target="_blank"><img src="images/facebook.png" alt="" onMouseOver="inSocial(this)" onMouseOut="outSocial(this)"></a>
+              
+              <a href="https://twitter.com/iamsumanjit" target="_blank"><img src="images/twitter.png" alt="" onMouseOver="inSocial(this)" onMouseOut="outSocial(this)"></a>
+              
+              <a href="https://plus.google.com/+SumanjitSenGupta09" target="_blank"><img src="images/googleplus.png" alt="" onMouseOver="inSocial(this)" onMouseOut="outSocial(this)"></a>
+              <a href="mailto:luvdjkaran09@gmail.com"><img src="images/dribbble.png" alt="" onMouseOver="inSocial(this)" onMouseOut="outSocial(this)"></a>
+
+            </div>
+
+          </div>
+        </section>
+
+<!--COPYRIGHT TAB-->
+        <section id="copyright">
+          <div class="container_12">
+            
+            <div id="cop_desc">Copyright 2014 <a href="https://twitter.com/iamsumanjit" target="_blank">@iamsumanjit</a>. All Rights Reserved.</div>
+          
+          </div>
+        </section>
+  
+  </div>  
+</body>
+</html>
